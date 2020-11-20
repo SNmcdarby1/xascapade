@@ -1,22 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap|100,200,300,400,500,600,700');
 
-/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------w3school snippet*/
+* {
+  box-sizing: border-box;
+  margin-inline-end: 80px;
+}
+/* Style the header */
+header {
+  padding: 10px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(7, 4, 48);
+  float:left;
+}
 
+*section{
+  padding: 10px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(2, 2, 2);
+}
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: rgb(253, 193, 169);
+  padding: 20px;
+}
 
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #635050;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: -moz-inline-box;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(245, 105, 87);
+  padding: 10px;
+  text-align: center;
+  color: rgb(238, 13, 13);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#f5a9a9;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:rgb(14, 10, 10);
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#f19191;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
 /*------------------------------------------------------------------------------body*/
 body{
-    background: url("../images/lake.jpg")no-repeat;
+    background: cyan;
      background-size: cover;
     font-family: Roboto;
-    color: white;
+    color: rgb(15, 15, 15);
 } 
+.img{
+   background-image:  url("../images/lake.jpg")no-repeat;
+}
 ul {
     margin: 0px;
     padding: 0px;
     list-style: none; 
 }
 ul li {
-    float: left;
+    float: right;
     width: 200px;
     height: 40px;
     background-color:black;
@@ -25,12 +129,10 @@ ul li {
     text-align: center;
     font-size: 20px;
     margin-right: 2px;
-    position: justify fixed flex;
-
 }
 ul li a {
     text-decoration: none;
-    color: #fff;
+    color: rgb(250, 249, 249);
       display: block;
 }
 ul li a:hover{
