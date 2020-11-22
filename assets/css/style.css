@@ -1,202 +1,272 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap|100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap|100,200,300,400,500,600,700');
 
-/*-----------------------------------------------------------------------w3school snippet*/
-* {
-  box-sizing: border-box;
-  margin-inline-end: 80px;
-}
-/* Style the header */
-header {
-  padding: 10px;
-  margin-top: 40px;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 600;
-  color: rgb(7, 4, 48);
-  float:left;
+/*-----------------------------------------------------------------------/
+
+/*----------------------------------------------------------Youtube tutorial*/
+*body {
+    padding: 0;
+    width: 100px;
+    margin: 0;
+    height: 150vh;
+    font-family: 'Lato', sans-serif;
 }
 
-*section{
-  padding: 10px;
-  margin-top: 40px;
-  text-align: center;
-  font-size: 20px;
-  color: rgb(2, 2, 2);
-}
-/* Create two columns/boxes that floats next to each other */
 nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: rgb(253, 193, 169);
-  padding: 20px;
+    background: #fff;
+    padding: 20 20px;
+    display: flex;
+    align-items: baseline;
 }
 
-/* Style the list inside the menu */
+nav h1 {
+    display: inline-block;
+    padding-left: 30px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-size: 30px;
+    color: rgb(61, 194, 194);
+}
+
 nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-.form-group ,.btn ,.form-check{
-     float:left;
-     width:50%;
-  text-align:center;
-   margin-top: 25px;
-   margin-bottom: 25px;
-}
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #635050;
-  height: 300px; /* only for demonstration, should be removed */
+    display: inline-block;
+    margin: 0 50px;
 }
 
-/* Clear floats after the columns */
-section:after {
-  content: "";
-  display: -moz-inline-box;
-  clear: both;
+.nav-item {
+    margin-left: auto;
 }
 
-/* Style the footer */
-footer {
-  background-color: rgb(245, 105, 87);
-  padding: 10px;
-  text-align: center;
-  color: rgb(238, 13, 13);
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-* {
-  box-sizing: border-box;
-}
-.menu {
-  float:left;
-  width:20%;
-  text-align:center;
-}
-.menu a {
-  background-color:#f5a9a9;
-  padding:8px;
-  margin-top:7px;
-  display:block;
-  width:100%;
-  color:rgb(14, 10, 10);
-}
-.main {
-  float:left;
-  width:60%;
-  padding:0 20px;
-}
-.right {
-  background-color:#f19191;
-  float:left;
-  width:20%;
-  padding:15px;
-  margin-top:7px;
-  text-align:center;
-}
-
-@media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width:100%;
-  }
-}
-/*------------------------------------------------------------------------------body*/
-body{
-    background: cyan;
-     background-size: cover;
-    font-family: Roboto;
-    color: rgb(15, 15, 15);
-} 
-.img{
-   background-image:  url("../images/lake.jpg")no-repeat;
-}
-ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none; 
-}
-ul li {
-    float: right;
-    width: 200px;
-    height: 40px;
-    background-color:black;
-    opacity: .8;
-    line-height: 40px;
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 42px 15px 2px 15px;
+    margin: 0 8px;
     text-align: center;
+    color: #0e0d0d;
+    letter-spacing: 5px;
+    cursor: pointer;
+
+}
+
+nav ul li:hover {
+    color: cyan;
+}
+
+.active {
+    background-color: rgb(61, 194, 194);
+    color: #080808;
+    font-weight: bold;
+}
+
+.social {
+    display: inline-block;
+    width: 30px;
+    background-color: aquamarine;
+    padding: 40px 3px 3px 3px;
+    color: rgb(15, 15, 15);
+    margin: 0 5px;
+}
+
+.social i {
+    position: relative;
+    display: flex;
+    justify-content: center;
     font-size: 20px;
-    margin-right: 2px;
+    cursor: pointer;
 }
-ul li a {
-    text-decoration: none;
-    color: rgb(250, 249, 249);
-      display: block;
+
+.social i:hover {
+    color: #fc1f02;
 }
-ul li a:hover{
-    background-color: rgb(213, 252, 106);
+
+.overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 90px;
+    top: 25%;
+    z-index: 1;
 }
-ul li ul li { 
-    display: none;
+
+.box-1 {
+    width: 300px;
+    height: 400px;
+    background: url("../images/pretty.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px;
 }
-ul li:hover ul li{
-    display: block;
-    color: whitesmoke;
+
+.box-2 {
+    width: 300px;
+    height: 400px;
+    background: url("../images/bora.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px;
+    transform: translateY(-60px);
 }
+
+.box-3 {
+    width: 300px;
+    height: 400px;
+    background: url("../images/lake.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px;
+}
+
+.box-4 {
+    width: 300px;
+    height: 400px;
+    background: url("../images/palma.jpg")no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px;
+    transform: translateY(-60px);
+}
+
+main {
+    width: 60%;
+    float: right;
+    position: relative;
+    z-index: 5;
+    top: 30%;
+}
+
+main h1 {
+    font-size: 190px;
+    letter-spacing: 20px;
+    font-family: 'Bebas Neus', sans-serif;
+    transform: translateY(-40px);
+    padding-left: 200px;
+    color: #08303A;
+    line-height: 200px;
+    margin: 10;
+}
+
+main h1 span {
+    color: white;
+}
+
+main h5 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 30px;
+    color: rgb(4, 61, 42);
+    transform: translateY(60px);
+    text-align: center;
+}
+
+main p {
+    width: 50%;
+    text-align: justify;
+    transform: translateY(80%);
+    font-weight: 400;
+    color: #7f7f7f;
+    margin: 10;
+}
+
+main button {
+    width: 180px;
+    outline: none;
+    background-color: #fff;
+    border: 1px solid #008833;
+    text-transform: translateY(50%);
+    border-radius: none;
+    letter-spacing: 5px;
+    padding: 5px;
+    margin-top 25px;
+    justify-items: right;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: #083012;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #0f9798;
+    width: 100%;
+    height: 80px;
+    align-item: center;
+}
+
+footer ul {
+    margin: 0 auto 0 200px;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 25px;
+    font-weight: lighter;
+    color: #cfc8f8;
+}
+
+footer ul li hr {
+    width: 80px;
+    transform: translateY(20px);
+    border: 0.5px solid #b4aeae;
+}
+
+.cam {
+    position: absolute;
+    left: 100;
+    bottom: 0px;
+    padding: 200px 10px 30px 10px;
+    font-size: 20px;
+    color: #0f979b;
+}
+
+.text {
+    display: flex;
+    padding: 0 40px;
+    background-color: rgb(23, 55, 63);
+    height: 80px;
+    align-item: center;
+    letter-spacing: 3px;
+    color: #0f979b;
+}
+
+.icons {
+    margin: 0 30px;
+    font-size: 25px;
+    color: antiquewhite;
+}
+
+icons i {
+    marging-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*-----------------------------------------------------------------------------*/
-.heading {
-    text-align: 50px;
-    font-weight: 200px;
-    text-anchor: 15rem;
-    padding: 10px;
-    Margin-top: 25px;
-}
+
 /*--------------------------------------------------------------------------------------flights*/
-.booking-form-box {
-max-width: 350pxborder: 1px solid ~ced4da;
-margin: 10% auto 0;
-}
+
 /*--------------------------------------------------------------------------------------nav*/
 
 
 /*--------------------------------------------------------------------------------------footer*/
 
-.hvr-sweep-to-bottom:before {
-    background: rgb(160, 157, 157);
-    height: 120px;
-}
-.social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
-    text-align: center;
-    color: #774545;
-    background: #b4aeae;
-    transition: all 0.35s ease-in-out; 
-    -moz-transition: all 0.35s ease-in-out; 
-    -webkit-transition: all 0.35s ease-in-out; 
-    -o-transition: all 0.35s ease-in-out; 
-}
-.social-links li a i:hover{
-    background: #e84610;
-}
-#footer-details {
-    padding: 20px;
-}
-.footer-details{
-    padding: 20px;
-}
 
 
 
