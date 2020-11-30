@@ -25,35 +25,36 @@
 
 </head>
 
-<body id="home" class="container-fluid scrollspy">
+<body class="container-fluid scrollspy">
     <div class="navbar-fixed">
-        <nav class="teal">
-            <div class="container-fluid">
+        <nav class="teal scrollspy autocomplete responsive">
+            <ul class="right hide-on-medium-and-down">
 
-                <ul class="right hide-on-medium-and-down">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="places.html">Places</a>
+                </li>
+                <li>
+                    <a href="search.html">Search</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
 
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="places.html">Places</a>
-                    </li>
-                    <li>
-                        <a href="search.html">Search</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
+            </ul>
+    </div>
+    </nav>
+    </div>
+    <div>
+        <h1>XASCAPADE TRAVEL AGENCY</h1>
     </div>
     <div>
         <ul class="sidenav" id="mobile-nav">
@@ -78,96 +79,56 @@
             </li>
         </ul>
     </div>
-    <!-- Section: Contact -->
-    <section id="contact" class="section section-contact scrollspy">
+    <!--section: search-->
+    <section id="search" class="section scrollspy">
         <div class="container-fluid">
-            <div class="row">
-                <!--section: search-->
-                <div class="row">
-                    <div class="col s12">
-                        <h3>Search Destinations</h3>
-                        <div class="input-field">
-                            <input type="text" class="white green-text autocomplete" id="autocomplete-input" placeholder="Dubai, Spain,Rio, etc....">
-
-                        </div>
+            <div class="col">
+                <form autocomplete="on" action="/action_page.php">
+                    <div class="autocomplete" style="width:600px;">
+                        <input id="myInput" type="text" name="myCountry" placeholder="Country">
                     </div>
-                </div>
-                <section id="search" class="section section-search  lighten-1 darken-1 white-text center scrollspy">
-                    <div class="container-fluid">
-                        <div class="card s6 m6">
-                            <div class="row inline-block teal accent-3 section-boxes">
-                                <div class="col s12 m4">
-                                    <div class="card-panel">
-                                        <i class="material-icons large teal-text">room</i>
-                                        <h4>Pick Where</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                            Architecto, incidunt minima, sunt, omnis unde maiores dicta
-                                            quos beatae nobis adipisci quaerat. Minus tempora enim, error
-                                            eligendi sint blanditiis quis ipsa.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col s12 m4">
-                                    <div class="card-panel">
-                                        <i class="material-icons large teal-text">room</i>
-                                        <h4>Pick Where</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                            Architecto, incidunt minima, sunt, omnis unde maiores dicta
-                                            quos beatae nobis adipisci quaerat. Minus tempora enim, error
-                                            eligendi sint blanditiis quis ipsa.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col s12 m4">
-                                    <div class="card-panel">
-                                        <i class="material-icons large teal-text">room</i>
-                                        <h4>Pick Where</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                            Architecto, incidunt minima, sunt, omnis unde maiores dicta
-                                            quos beatae nobis adipisci quaerat. Minus tempora enim, error
-                                            eligendi sint blanditiis quis ipsa.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </section>
-
-                <div class="col s6 m6">
-                    <div class="card-panel teal white-text center">
-                        <i class="material-icons">Contact us for your Booking</i>
-                        <h5>Xascapade</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Excepturi, labore!
-                        </p>
-                    </div>
-                    <ul class="collection with-header">
-                        <li class="collection-header">
-                            <h4>Location<h4>
-                        </li>
-                        <li class="collection-item">Xascapade Travel Agency</li>
-                        <li class="collection-item">1254 Dublin City, Dublin</li>
-                        <li class="collection-item">Dublin 1 01101</li>
-                    </ul>
-                </div>
-                <div class="col s6 m6">
-                    <div class="card-panel teal white-text center">
-                        <i class="material-icons">Contact us for your Booking</i>
-                        <h5>Xascapade</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Excepturi, labore!
-                        </p>
-                    </div>
-                    <ul class="collection with-header">
-                        <li class="collection-header">
-                            <h4>Location<h4>
-                        </li>
-                        <li class="collection-item">Xascapade Travel Agency</li>
-                        <li class="collection-item">1254 Dublin City, Dublin</li>
-                        <li class="collection-item">Dublin 1 01101</li>
-                    </ul>
-                </div>
+                    <input type="submit">
+                </form>
             </div>
+        </div>
+    </section>
+    <!-- Section: Contact -->
+    <section class="section section-search scrollspy">
+        <div class="col-6 s6 m6">
+            <div class="card-panel teal white-text center">
+                <i class="material-icons">Contact us for your Booking</i>
+                <h5>Xascapade</h5>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Excepturi, labore!
+                </p>
+            </div>
+            <ul class="collection with-header">
+                <li class="collection-header">
+                    <h4>Location<h4>
+                </li>
+                <li class="collection-item">Xascapade Travel Agency</li>
+                <li class="collection-item">1254 Dublin City, Dublin</li>
+                <li class="collection-item">Dublin 1 01101</li>
+            </ul>
+        </div>
+        <div class="col-6 s6 m6">
+            <div class="card-panel teal white-text center">
+                <i class="material-icons">Contact us for your Booking</i>
+                <h5>Xascapade</h5>
+                <p>Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Excepturi, labore!
+                </p>
+            </div>
+            <ul class="collection with-header">
+                <li class="collection-header">
+                    <h4>Location<h4>
+                </li>
+                <li class="collection-item">Xascapade Travel Agency</li>
+                <li class="collection-item">1254 Dublin City, Dublin</li>
+                <li class="collection-item">Dublin 1 01101</li>
+            </ul>
+        </div>
+        </div>
 
         </div>
     </section>
@@ -175,8 +136,8 @@
         <section class="py-5 text-center container-fluid">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="font-weight-light">XASCAPADE TRAVEL AGENCY</h1>
-                    <p class="lead text-muted">Something short and leading about the collection below—its contents, the
+                    <h1>XASCAPADE TRAVEL AGENCY</h1>
+                    <p>Something short and leading about the collection below—its contents, the
                         creator,
                         etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
                     <p>
@@ -226,9 +187,17 @@
         </section>
         </section>
         <p class="flow-text">Xascapade &copy;2020</p>
+        <div class="container">
+            <p class="float-right mb-1">
+                <a href="#">Back to top</a>
+            </p>
     </footer>
 
 
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
 
 </body>
