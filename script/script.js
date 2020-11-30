@@ -1,15 +1,9 @@
   // Sidenav
-  const sideNav = document.querySelector('.sidenav');
-  M.Sidenav.init(sideNav, {});
-
-  //Slider
-  const slider = document.querySelector('.slider');
-  M.Slider.init(slider, {
-      indicators: false,
-      height: 500,
-      transition: 500,
-      interval: 6000
+  const icons = document.querySelector('.sidenav');
+  M.SideNav.init(SideNav, {
+      menu
   });
+
 
   //Autocomplete
   const ac = document.querySelector('.autocomplete');
@@ -75,3 +69,31 @@
       }
   });
   // Material Boxed
+  $("button").click(function() {
+      $("navbar").toggleClass("blue");
+  });
+  $(newFunction()).css("background-color", "yellow");
+
+
+
+  function newFunction() {
+      return "body";
+  }
+  $("nav").toggleClass();
+
+  $("input[type='text']").onclick("any", function() {
+      if (!this.value) {
+          alert("Please enter some text!");
+      }
+  });
+
+  var input = $("input:image").css({
+      background: "teal",
+      border: "3px green solid"
+  });
+  $("div")
+      .text(+input.length + ".")
+      .css("color", "red");
+  $("form").submit(function(event) {
+      event.preventDefault();
+  });

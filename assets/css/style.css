@@ -1,6 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap|100,200,300,400,500,600,700');
 
-/*-----------------------------------------------------------------------/
+https: //stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
+
+/*-----------------------------------------------------------------------*/
+/* https://demos.jquerymobile.com/1.4.3/rwd/ */
+body {
+    font-family: Lato, san-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+p {
+    color: black !important;
+}
+
+H1 {
+    color: #fff !important;
+}
+
+a:link {
+    color: rgb(252, 245, 244) !important;
+}
+
+
+.main,
+.sidebar {
+    display: block !important;
+    width: 100% !important;
+}
+
+/* First breakpoint at 576px */
+/* Inherits mobile styles, but floats containers to make columns */
+@media all and (min-width: 36em) {
+    .main {
+        float: left !important;
+        width: 60% !important;
+    }
+
+    .sidebar {
+        float: left !important;
+        width: 40% !important;
+    }
+}
+
+/* Second breakpoint at 800px */
+/* Adjusts column proportions, tweaks base H1 */
+@media all and (min-width: 50em) {
+    .main {
+        width: 70% !important;
+    }
+
+    .sidebar {
+        width: 30% !important;
+    }
+
+
+    H1 {
+        color: rgb(45, 208, 236) !important;
+        font-size: 1.2em !important;
+    }
+}
 
 
 /*-----------------------------------------------------------------------------Section search*/
@@ -8,7 +67,7 @@
     padding: 5px !important;
     font-size: 18px !important;
     width: 90% !important;
-    border: #f4f4f4 3px solid !important;
+    border: #3f3d3d 3px solid !important;
 }
 
 section-follow .fa-4x {
@@ -27,12 +86,21 @@ logo {
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) (min-width: 320px) {
 
     /* For mobile phones: */
-    [class*="col-"] {
+    [class*="container"] {
         width: 100% !important;
     }
 }
 
+@media only screen and (min-width: 320px) {
+
+    /* For mobile phones: */
+    [class*="container"] {
+        width: 100% !important;
+    }
+}
+
+/*--------------------------------------------------------------------------------------media/
 /*--------------------------------------------------------------------------------------media/
